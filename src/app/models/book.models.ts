@@ -3,4 +3,5 @@ export interface BookDto  {
   title: string;
   authorship: string;
   image?: string;
+  favorite?: boolean;
 }
