@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { BookDto } from '../../models/book.models';
 
 @Component({
@@ -9,14 +9,9 @@ import { BookDto } from '../../models/book.models';
 })
 export class Book {
 
-  @Input () book : BookDto = {
-    title: 'O Senhor dos Anéis',
-    authorship: 'J.R.R. Tolkien',
-    image: 'assets/sem-livros.png',
-    favorite: false
-  }
+  book = input.required<BookDto>();
 
   changeFavoriteStatus() {
-    this.book.favorite = !this.book.favorite;
+    this.book().favorite = !this.book().favorite;
   }
 }
