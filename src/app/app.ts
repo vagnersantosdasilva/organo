@@ -7,7 +7,7 @@ import { BookList } from "./components/book-list/book-list";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Footer, Book, BookList],
+  imports: [Header, Footer,  BookList],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

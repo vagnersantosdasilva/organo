@@ -1,4 +1,8 @@
-<section>
+<section
+  [ngClass]="getClass(book().genre.id)"
+  class="book"
+  [ngStyle]="{'background-color': book().favorite ? '#ffeb3b' : '#ffffff'}"
+>
   <button class="favorite-btn" (click)="changeFavoriteStatus()">
     <span>{{ book().favorite ? '\u2764' : '\u2661' }}</span>
   </button>

@@ -12,3 +12,10 @@ export interface GenreDto {
   value: string;
   books: BookDto[];
 }
+
+
+export interface BookListByGenre {
+  genreId: string;
+  genreValue: string;
+  books: BookDto[];
+}

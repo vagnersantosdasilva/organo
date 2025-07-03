@@ -1,4 +1,109 @@
 .highlight-line--large {
-  width: 64px;
+  width: 4.6rem;
   border-bottom: 4px solid var(--color-primaria);
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 1.5em;
+  font-weight: bold;
+}
+
+h2 {
+  margin-bottom: 0rem;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+}
+
+.list-book {
+  margin: 0 4rem;
+  padding: 4rem 0;
+}
+
+.info {
+  background-color: #E8FFFF;
+  border-bottom: 4px solid #82CFFA;
+
+}
+
+.success {
+  background-color: #E9FFE3;
+  border-bottom: 4px solid #A6D157;
+}
+
+
+.danger {
+  background-color: #FFE3E3;
+  border-bottom: 4px solid #E06B69;
+}
+
+
+.warning {
+  background-color: #FFF1E4;
+  border-bottom: 4px solid #FF8A29;
+}
+
+
+.secondary {
+  background-color: #FFF0FA;
+  border-bottom: 4px solid #DB6EBF;
+}
+
+
+.text-info {
+  color: #82CFFA;
+  font-weight: bolder;
+}
+
+.text-success {
+  color: #A6D157;
+  font-weight: bolder;
+}
+
+
+.text-danger {
+  color: #E06B69;
+  font-weight: bolder;
+}
+
+
+.text-warning {
+  color: #FF8A29;
+  font-weight: bolder;
+}
+
+
+.text-secondary {
+  color: #DB6EBF;
+  font-weight: bolder;
+}
+
+.text-info .highlight-line--large,
+.text-info+.highlight-line--large {
+  border-bottom: 4px solid #82CFFA;
+}
+
+.text-success .highlight-line--large,
+.text-success+.highlight-line--large {
+  border-bottom: 4px solid #A6D157;
+}
+
+.text-danger .highlight-line--large,
+.text-danger+.highlight-line--large {
+  border-bottom: 4px solid #E06B69;
+}
+
+.text-warning .highlight-line--large,
+.text-warning+.highlight-line--large {
+  border-bottom: 4px solid #FF8A29;
+}
+
+.text-secondary .highlight-line--large,
+.text-secondary+.highlight-line--large {
+  border-bottom: 4px solid #DB6EBF;
 }

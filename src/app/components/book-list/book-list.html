@@ -1,8 +1,14 @@
-<section>
-  <h2 class="text-title">
-    {{listTitle}}
+@for(genre of booksGroupedByGenre; track genre.genreId) {
+<section [ngClass]="getClass(genre.genreId)">
+  <h2 class="text-title" [ngClass]="getTextClass(genre.genreId)">
+    {{genre.genreValue}}
   </h2>
-  <span class="highlight-line highlight-line--large">
-    <ng-content select="[selector]"></ng-content>
+  <span class="highlight-line highlight-line--large" [ngClass]="getTextClass(genre.genreId)">
+    {{genre.books.length}} livros
   </span>
+
+  <div class="list-book mt-4">
+    <app-literary-genre [listBooks]="genre.books"></app-literary-genre>
+  </div>
 </section>
+}
